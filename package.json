@@ -1,0 +1,57 @@
+{
+  "name": "best-blog-data",
+  "description": "A powerful and lightweight npm package for managing blog post data with pagination, category filtering, and fuzzy search.",
+  "keywords": [
+    "blog",
+    "posts",
+    "pagination",
+    "cms",
+    "categories",
+    "typescript",
+    "fuse",
+    "search",
+    "content",
+    "json",
+    "blog-data",
+    "static-blog",
+    "dummy-data"
+  ],
+  "author": "devgauravjatt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devgauravjatt/best-blog-data"
+  },
+  "license": "MIT",
+  "version": "0.8",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@rslib/core": "^0.9.1",
+    "@types/node": "^22.15.21",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1"
+  },
+  "private": true,
+  "dependencies": {
+    "fuse.js": "^7.1.0"
+  }
+}
