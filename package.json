@@ -16,13 +16,14 @@
     "static-blog",
     "dummy-data"
   ],
+  "publisher": "devgauravjatt",
   "author": "devgauravjatt",
   "repository": {
     "type": "git",
     "url": "https://github.com/devgauravjatt/best-blog-data"
   },
   "license": "MIT",
-  "version": "0.8",
+  "version": "0.8.2",
   "type": "module",
   "exports": {
     ".": {
@@ -32,7 +33,9 @@
   },
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "rslib build",
@@ -50,7 +53,7 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.31.1"
   },
-  "private": true,
+  "private": "false",
   "dependencies": {
     "fuse.js": "^7.1.0"
   }

@@ -5,7 +5,7 @@ import { allPosts } from '../data';
  * Search for posts by title query using Fuse.js.
  *
  * @param {string} query - The search query string.
- * @returns {Array<Object>} - An array of posts matching the search query.
+ * @returns {Array<Object of Post>} - An array of posts matching the search query.
  */
 export function getPostsBySearch(query: string) {
   const fuse = new Fuse(allPosts, {
@@ -13,5 +13,5 @@ export function getPostsBySearch(query: string) {
     keys: ['title'],
   });
   const posts = fuse.search(query);
-  return posts.slice(0, 10);
+  return posts.slice(0, 10).map(({ item }) => item);
 }

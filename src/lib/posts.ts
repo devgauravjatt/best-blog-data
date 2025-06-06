@@ -1,4 +1,4 @@
-import { allPosts } from '../data';
+import { allPosts, allPostsWithContent } from '../data';
 
 /**
  * Returns a slice of posts.
@@ -28,14 +28,14 @@ export function getPosts(pageIndex: number = 1) {
  *
  * @param {string} slug The post slug.
  *
- * @returns {Object} The post or `undefined` if not found.
+ * @returns {Posts | undefined} The post or `undefined` if not found.
  *
  * @example
  * const post = getPostsBySlug('hello-world');
  * console.log(post.title); // e.g., "Hello World"
  */
-export function getPostsBySlug(slug: string) {
-  const post = allPosts.find((post) => post.slug === slug);
+export function getFullPostBySlug(slug: string) {
+  const post = allPostsWithContent.find((post) => post.slug === slug);
   return post;
 }
 

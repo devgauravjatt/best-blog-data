@@ -2,7 +2,7 @@ import {
   getPosts,
   getAllCategories,
   getPostsByCategory,
-  getPostsBySlug,
+  getFullPostBySlug,
 } from './lib/posts';
 import { getPostsBySearch } from './lib/search';
 
@@ -10,6 +10,6 @@ export {
   getPosts,
   getAllCategories,
   getPostsByCategory,
-  getPostsBySlug,
+  getFullPostBySlug,
   getPostsBySearch,
 };

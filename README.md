@@ -39,7 +39,7 @@ import {
   getPosts,
   getAllCategories,
   getPostsByCategory,
-  getPostsBySlug,
+  getFullPostBySlug,
   getPostsBySearch,
 } from 'best-blog-data';
 ```
@@ -60,10 +60,10 @@ console.log(page2.posts.length);
 
 ---
 
-### 🔗 Get Post by Slug
+### 🔗 Get Full Post by Slug with html content
 
 ```ts
-const post = getPostsBySlug('my-blog-post-slug');
+const post = getFullPostBySlug('my-blog-post-slug');
 if (post) {
   console.log(post.title);
 }
@@ -153,13 +153,13 @@ interface Post {
   slug: string;
   title: string;
   content?: string;
-  date?: string;
-  image?: string;
+  date: string;
+  image: string;
   categorie: {
     slug: string;
     name: string;
   };
-  meta_seo?: {
+  meta_seo: {
     title: string;
     description: string;
     image: string;
