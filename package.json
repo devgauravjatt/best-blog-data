@@ -1,6 +1,6 @@
 {
   "name": "best-blog-data",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "private": false,
   "description": "A powerful and lightweight npm package for working with structured blog post data, featuring 200+ dummy posts out of the box. Includes built-in pagination, categorization, fuzzy search, and full TypeScript support. Perfect for static blogs, CMS backends, or frontend demos.",
   "type": "module",
