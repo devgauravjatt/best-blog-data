@@ -1,0 +1,59 @@
+{
+  "name": "best-blog-data",
+  "version": "0.8.7",
+  "private": false,
+  "description": "A powerful and lightweight npm package for working with structured blog post data, featuring 200+ dummy posts out of the box. Includes built-in pagination, categorization, fuzzy search, and full TypeScript support. Perfect for static blogs, CMS backends, or frontend demos.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/devgauravjatt/best-blog-data#readme",
+  "bugs": {
+    "url": "https://github.com/devgauravjatt/best-blog-dataissues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devgauravjatt/best-blog-data.git"
+  },
+  "publisher": "devgauravjatt",
+  "author": "devgauravjatt",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --cache .",
+    "lint:fix": "pnpm run lint --fix",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --cache --write .",
+    "release": "bumpp && pnpm publish",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "fuse.js": "^7.1.0"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config": "^7.0.1",
+    "@sxzz/prettier-config": "^2.2.1",
+    "@types/node": "^22.15.17",
+    "bumpp": "^10.1.0",
+    "eslint": "^9.26.0",
+    "happy-dom": "^17.4.7",
+    "prettier": "^3.5.3",
+    "tsdown": "^0.12.7",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  },
+  "prettier": "@sxzz/prettier-config"
+}
