@@ -5,6 +5,11 @@ A powerful and lightweight npm package for working with structured blog post dat
 > [!NOTE]
 > 😍 200+ Posts and 30 Categories with Seo Meta!
 
+![GitHub License](https://img.shields.io/github/license/devgauravjatt/best-blog-data?logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/devgauravjatt/best-blog-data?logo=git)
+![NPM Downloads](https://img.shields.io/npm/dw/best-blog-data?logo=npm&color=%23f75352)
+![NPM Version](https://img.shields.io/npm/v/best-blog-data?logo=npm&color=%23f75352)
+
 ---
 
 ## ✨ Features
