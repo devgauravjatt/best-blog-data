@@ -1,3 +1,4 @@
+publishBranch: npm-pkg
 onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
