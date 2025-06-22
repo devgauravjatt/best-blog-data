@@ -36,8 +36,7 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
-    "release": "bumpp && pnpm publish",
-    "prepublishOnly": "pnpm run build"
+    "release": "pnpm publish"
   },
   "dependencies": {
     "fuse.js": "^7.1.0"
@@ -46,7 +45,6 @@
     "@sxzz/eslint-config": "^7.0.4",
     "@sxzz/prettier-config": "^2.2.1",
     "@types/node": "^22.15.17",
-    "bumpp": "^10.2.0",
     "eslint": "^9.29.0",
     "happy-dom": "^17.6.3",
     "prettier": "^3.5.3",
